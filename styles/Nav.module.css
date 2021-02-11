@@ -1,0 +1,15 @@
+.nav {
+  width: 70%;
+  margin: 2rem auto;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.links a {
+  font-weight: 600;
+  font-size: 20px;
+}
