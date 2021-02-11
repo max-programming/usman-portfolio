@@ -16,16 +16,7 @@
   font-size: 1.5rem;
   font-family: "Roboto Mono", monospace;
   font-weight: 400;
-}
-
-.devTitle {
-  color: #c586c0;
-}
-.studTitle {
-  color: #569cd6;
-}
-.contentTitle {
-  color: #aaaa81;
+  text-align: center;
 }
 
 @media (max-width: 768px) {

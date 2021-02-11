@@ -10,9 +10,9 @@ export default function Header() {
         </Link>
       </h1>
       <h3>
-        <span className={styles.devTitle}>Developer</span>.{" "}
-        <span className={styles.studTitle}>Student</span>.{" "}
-        <span className={styles.contentTitle}>Content Creator</span>
+        <span style={{ color: "#c586c0" }}>Developer</span>.{" "}
+        <span style={{ color: "#569cd6" }}>Student</span>.{" "}
+        <span style={{ color: "#aaaa81" }}>Content Creator</span>
       </h3>
     </header>
   );

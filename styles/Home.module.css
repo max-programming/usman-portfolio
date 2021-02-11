@@ -31,11 +31,13 @@
 .image img {
   border-radius: 50%;
   user-select: none;
-  /* color: #c7b217; */
 }
 
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;
+  }
+  .container {
+    width: 100%;
   }
 }
