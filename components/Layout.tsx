@@ -11,7 +11,7 @@ export default function Layout({ title, children }: LayoutProps) {
   return (
     <div>
       <Head>
-        <title>{title}</title>
+        <title>{title} | Usman Sabuwala</title>
       </Head>
       <Header />
       {/* <Nav /> */}

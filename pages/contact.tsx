@@ -2,7 +2,7 @@ import Layout from "../components/Layout";
 
 export default function Contact() {
   return (
-    <Layout title="Contact | Usman Sabuwala">
+    <Layout title="Contact">
       <div>Contact page</div>
     </Layout>
   );

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <Layout title="Home | Usman Sabuwala">
+    <Layout title="Home">
       <div className={styles.container}>
         <div className={styles.hero}>
           <div className={styles.image}>
@@ -15,12 +15,17 @@ export default function Home() {
               Hello there! I'm <span className={styles.name}>Usman</span>!
             </h2>
             <p>
-              👋 My name is Usman Sabuwala, a web developer from India.
+              👋 My name is <b>Usman Sabuwala</b>, a{" "}
+              <span style={{ color: "#007acc" }}>web developer</span> from
+              India.
               <br />
-              👨‍💻 I love programming and that led to many people. <br /> I learnt
-              JavaScript, TypeScript, React.js and many other awesome things.{" "}
-              <br /> My other interests include playing cricket and doing math
-              😉
+              👨‍💻 I love programming and that led me to meet many awesome people
+              and friends. <br /> I learnt{" "}
+              <span style={{ color: "#DD9C25" }}>JavaScript</span>,{" "}
+              <span style={{ color: "#0076C6" }}>TypeScript</span>,{" "}
+              <span style={{ color: "#37D1F7" }}>React.js</span> and many other
+              awesome things. <br /> My other interests include playing cricket
+              and doing math 😉
               <br />
             </p>
           </div>
