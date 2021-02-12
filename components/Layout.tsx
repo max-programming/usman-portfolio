@@ -22,12 +22,12 @@ export default function Layout({ title, children }: LayoutProps) {
           name="description"
           content="Personal site for Usman Sabuwala, Developer, Student, and Content Creator."
         />
-        <meta name="image" content="/usman.jpg" />
+        <meta name="image" content="https://usman-s.me/usman.jpg" />
 
         <meta property="og:title" content="Usman Sabwuala" />
         <meta property="og:type" content="portfolio" />
         <meta property="og:url" content="https://usman-s.me" />
-        <meta property="og:image" content="/usman.jpg" />
+        <meta property="og:image" content="https://usman-s.me/usman.jpg" />
         <meta
           name="og:description"
           content="Personal site for Usman Sabuwala, Developer, Student, and Content Creator."
@@ -40,7 +40,7 @@ export default function Layout({ title, children }: LayoutProps) {
           name="twitter:description"
           content="Personal site for Usman Sabuwala, Developer, Student, and Content Creator."
         />
-        <meta name="twitter:image" content="/usman.jpg" />
+        <meta name="twitter:image" content="https://usman-s.me/usman.jpg" />
 
         <link rel="canonical" href="https://usman-s.me" />
 
