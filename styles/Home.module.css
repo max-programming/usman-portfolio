@@ -31,8 +31,16 @@
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;
+    margin: 10px;
   }
   .container {
     width: 100%;
+  }
+  .intro {
+    padding: 1.1rem;
+    text-align: center;
+  }
+  .intro h2 {
+    font-size: 2rem;
   }
 }

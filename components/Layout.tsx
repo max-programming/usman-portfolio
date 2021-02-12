@@ -20,7 +20,7 @@ export default function Layout({ title, children }: LayoutProps) {
         <meta name="MobileOptimized" content="320" />
         <meta
           name="description"
-          content="Personal site for Usman Sabuwala, Developer, Student, and Content Creator."
+          content="I'm Usman, Developer, Student, and Content Creator."
         />
         <meta name="image" content="https://usman-s.me/usman.jpg" />
 
@@ -30,7 +30,7 @@ export default function Layout({ title, children }: LayoutProps) {
         <meta property="og:image" content="https://usman-s.me/usman.jpg" />
         <meta
           name="og:description"
-          content="Personal site for Usman Sabuwala, Developer, Student, and Content Creator."
+          content="I'm Usman, Developer, Student, and Content Creator."
         />
 
         <meta name="twitter:card" content="summary" />
@@ -38,7 +38,7 @@ export default function Layout({ title, children }: LayoutProps) {
         <meta name="twitter:title" content={title} />
         <meta
           name="twitter:description"
-          content="Personal site for Usman Sabuwala, Developer, Student, and Content Creator."
+          content="I'm Usman, Developer, Student, and Content Creator."
         />
         <meta name="twitter:image" content="https://usman-s.me/usman.jpg" />
 
