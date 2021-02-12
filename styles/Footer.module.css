@@ -1,0 +1,32 @@
+.footer {
+  background-color: whitesmoke;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  text-align: center;
+  padding: 20px;
+}
+
+.links {
+  text-align: center;
+}
+
+.footerText {
+  font-size: 1.6rem;
+}
+
+.footerText a {
+  border-bottom: 1.4px solid transparent;
+  color: steelblue;
+}
+
+.footerText a:hover {
+  border-bottom-color: steelblue;
+}
+
+@media (max-width: 900px) {
+  .footerText {
+    font-size: 1.2rem;
+  }
+}
