@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Footer from "./Footer";
 import Header from "./Header";
-// import Nav from "./Nav";
+import Nav from "./Nav";
 
 interface LayoutProps {
   title: string;
@@ -50,8 +50,7 @@ export default function Layout({ title, children }: LayoutProps) {
         />
       </Head>
       <Header />
-      {/* <Nav /> */}
-      <main>{children}</main>
+      <main className="m-16">{children}</main>
       <Footer />
     </div>
   );
