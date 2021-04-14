@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <Layout title="Home">
-      <div className="container mx-auto">
+      <div className="container mx-auto selection:bg-blue-200 selection:text-black">
         <div className="flex justify-evenly items-center flex-col md:flex-row">
           <div>
             <Image

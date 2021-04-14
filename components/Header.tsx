@@ -4,7 +4,7 @@ import Nav from "@/components/Nav";
 
 export default function Header() {
   return (
-    <header className="flex flex-col items-center to-blue-500 from-purple-600 bg-gradient-to-l p-4 text-white mb-8">
+    <header className="flex flex-col items-center to-blue-500 from-purple-600 bg-gradient-to-l p-4 text-white mb-8 selection:bg-indigo-400 selection:text-gray-200">
       {/* <Nav /> */}
       <h1 className="text-4xl md:text-5xl m-1">
         <Link href="/">

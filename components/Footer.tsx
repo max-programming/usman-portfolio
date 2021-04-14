@@ -11,7 +11,7 @@ export default function Footer() {
     setHover(false);
   };
   return (
-    <footer className="mt-16">
+    <footer className="mt-16 selection:bg-blue-200 selection:text-black">
       <div className="container mx-auto">
         <div className="flex justify-center items-center">
           <a

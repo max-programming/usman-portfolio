@@ -5,7 +5,10 @@ module.exports = {
     extend: {},
   },
   variants: {
-    extend: {},
+    extend: {
+      textColor: ["selection"],
+      backgroundColor: ["selection"],
+    },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-selection-variant")],
 };
