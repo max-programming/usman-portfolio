@@ -43,7 +43,7 @@ export default function Footer() {
             <FiGithub color="#333" size={40} />
           </a>
         </div>
-        <p className="text-2xl text-center mt-4">
+        <p className="text-2xl text-center mt-4 mb-3">
           Built with{" "}
           <a href="https://nextjs.org" className="font-bold text-blue-600">
             Next.js

@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <Layout title="Home">
       <div className="container mx-auto">
-        <div className="flex justify-evenly items-center">
+        <div className="flex justify-evenly items-center flex-col md:flex-row">
           <div>
             <Image
               src="/usman.jpg"
