@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Script from "next/script";
 import Footer from "./Footer";
 import Header from "./Header";
 import Nav from "./Nav";
@@ -13,6 +14,11 @@ export default function Layout({ title, children }: LayoutProps) {
     <div className="main-container">
       <Head>
         <title>{title} | Usman Sabuwala</title>
+        <Script
+          type="text/javascript"
+          src="https://issupported.com/plugin?browsers=defaults, not IE 11"
+          strategy="lazyOnload"
+        />
         <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -43,6 +49,7 @@ export default function Layout({ title, children }: LayoutProps) {
         <meta name="twitter:image" content="https://usman-s.me/usman.jpg" />
 
         <link rel="canonical" href="https://usman-s.me" />
+        <link rel="shortcut icon" href="/usman.jpg" type="image/jpeg" />
 
         <meta
           name="keywords"
