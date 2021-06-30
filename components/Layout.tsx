@@ -52,7 +52,7 @@ export default function Layout({ title, children }: LayoutProps) {
       </Head>
       <Header />
       <main className="m-10 md:m-16">{children}</main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
