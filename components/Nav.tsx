@@ -1,52 +1,30 @@
 import Link from "next/link";
-import { useState } from "react";
+import AboutIcon from "./icons/About";
+import HomeIcon from "./icons/Home";
+import NavLink from "./NavLink";
 // import { GiHamburgerMenu } from "react-icons/gi";
-// import styles from "@/styles/Nav.module.css";
+// import styles from "styles/Nav.module.css";
 
 export default function Nav() {
-  const [isOpen, setIsOpen] = useState(false);
   return (
     <nav className="bg-gradient-to-l to-blue-400 from-purple-500 w-full text-center text-2xl p-2 rounded-2xl">
-      <div className="flex items-center justify-evenly">
-        <Link href="/">
-          <a className="p-2 text-gray-100 outline-none rounded-xl transition-all border-4 border-transparent hover:border-indigo-300">
-            Home
-          </a>
-        </Link>
+      <div className="flex items-center justify-evenly h-14">
+        <NavLink href="/" text="Home" Icon={HomeIcon} />
+        <NavLink href="/about" text="About" Icon={AboutIcon} />
         <a
           className="p-2 text-gray-100 outline-none rounded-xl transition-all border-4 border-transparent hover:border-indigo-300"
           href="https://blog.usman-s.me"
         >
           Blog
         </a>
-        {/* <Link href="/about">
-            <a className="m-2 text-gray-100">About</a>
-          </Link> */}
         {/* <Link href="/projects">
             <a>Projects</a>
-          </Link>
+          </Link>*/}
+        {/*
           <Link href="/contact">
             <a>Contact</a>
           </Link> */}
       </div>
-      {/* <div></div> */}
     </nav>
-    // <nav className={styles.nav}>
-    //   <div className={styles.links}>
-    //     <Link href="/">
-    //       <a>Home</a>
-    //     </Link>
-    //     <Link href="/about">
-    //       <a>About</a>
-    //     </Link>
-    //     {/* <Link href="/projects">
-    //       <a>Projects</a>
-    //     </Link>
-    //     <Link href="/contact">
-    //       <a>Contact</a>
-    //     </Link> */}
-    //   </div>
-    //   <div className={styles.separator}></div>
-    // </nav>
   );
 }

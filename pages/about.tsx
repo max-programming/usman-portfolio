@@ -1,6 +1,7 @@
-// import styles from "@/styles/About.module.css";
-import Layout from "@/components/Layout";
-import { technologies } from "@/constants";
+// import styles from "styles/About.module.css";
+import Layout from "components/Layout";
+import Technology from "components/Technology";
+import Image from "next/image";
 
 export default function About() {
   const currentYear = new Date().getFullYear();
@@ -8,60 +9,62 @@ export default function About() {
 
   return (
     <Layout title="About">
-      <div>
-        <h1>
-          <u>About</u> me 🤓
+      <div className="container mx-auto">
+        <h1 className="font-mono text-4xl">
+          <u>About</u> me 😀
         </h1>
-        <div>
+        <div className="mt-3 text-xl">
           <p>
             My name is Usman Sabuwala. I am {age} years old.
-            <br />
-            I like to code and develop. My hobby was computers in the past, but
-            slowly it became my passion.
-            <br />
-            And now I code to build things.
+            <br />I like programming and building web applications and teaching
+            about that on my{" "}
+            <a
+              href="https://youtube.com/maxprogramming"
+              className="text-red-700 font-semibold hover:underline"
+              target="_blank"
+            >
+              YouTube channel.
+            </a>
           </p>
-          <p>
-            I work with the technologies mentioned below: <br />
-            {technologies.map(tech => {
-              const { name, link, image } = tech;
-              return (
-                <a href={link}>
-                  <img src={image} alt={name} width={50} />
-                </a>
-              );
-            })}
-          </p>
+          <h2 className="font-mono text-4xl mt-3">Technologies</h2>
+          I work with the following technologies: <br />
+          <div className="grid grid-cols-3 place-items-center">
+            <Technology src="/technologies/web.png" />
+            <Technology
+              src="/technologies/git.png"
+              href="https://git-scm.com/"
+            />
+            <Technology
+              src="/technologies/github.png"
+              href="https://github.com/"
+            />
+            <Technology
+              src="/technologies/node.png"
+              href="https://nodejs.org"
+            />
+            <Technology
+              src="/technologies/react.png"
+              href="https://reactjs.org"
+            />
+            <Technology
+              src="/technologies/next.png"
+              href="https://nextjs.org/"
+            />
+            <Technology
+              src="/technologies/typescript.png"
+              href="https://typescriptlang.org/"
+            />
+            <Technology
+              src="/technologies/tailwind.png"
+              href="https://tailwindcss.com/"
+            />
+            <Technology
+              src="/technologies/electron.png"
+              href="https://electronjs.org/"
+            />
+          </div>
         </div>
       </div>
     </Layout>
-    // <Layout title="About">
-    //   <div className={styles.about}>
-    //     <h1>
-    //       <u>About</u> me 🤓
-    //     </h1>
-    //     <div className={styles.aboutMe}>
-    //       <p>
-    //         My name is Usman Sabuwala. I am {age} years old.
-    //         <br />
-    //         I like to code and develop. My hobby was computers in the past, but
-    //         slowly it became my passion.
-    //         <br />
-    //         And now I code to build things.
-    //       </p>
-    //       <p>
-    //         I work with the technologies mentioned below: <br />
-    //         {technologies.map(tech => {
-    //           const { name, link, image } = tech;
-    //           return (
-    //             <a href={link}>
-    //               <img src={image} alt={name} width={50} />
-    //             </a>
-    //           );
-    //         })}
-    //       </p>
-    //     </div>
-    //   </div>
-    // </Layout>
   );
 }

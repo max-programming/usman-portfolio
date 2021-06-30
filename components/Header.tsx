@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Nav from "@/components/Nav";
-// import styles from "@/styles/Header.module.css";
+import Nav from "components/Nav";
+// import styles from "styles/Header.module.css";
 
 export default function Header() {
   return (
