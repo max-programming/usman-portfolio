@@ -1,7 +1,8 @@
-import Head from "next/head";
-import Footer from "./Footer";
-import Header from "./Header";
-import Nav from "./Nav";
+import SEO from '@bradgarropy/next-seo';
+import Head from 'next/head';
+import Footer from './Footer';
+import Header from './Header';
+import Nav from './Nav';
 
 interface LayoutProps {
   title: string;
@@ -10,8 +11,29 @@ interface LayoutProps {
 
 export default function Layout({ title, children }: LayoutProps) {
   return (
-    <div className="main-container">
-      <Head>
+    <div className='main-container'>
+      <SEO
+        title={`${title} | Usman Sabuwala`}
+        description="I'm Usman, Developer, Student, and Content Creator."
+        icon='/usman.jpg'
+        twitter={{
+          card: 'summary',
+          image: '/usman.jpg',
+          site: '@MaxProgramming1',
+        }}
+        keywords={[
+          'usman',
+          'usman sabuwala',
+          'max programming',
+          'max',
+          'usman website',
+          "usman's website",
+          'max programming website',
+          'usman sabuwala website',
+          'usman portfolio',
+        ]}
+      />
+      {/* <Head>
         <title>{title} | Usman Sabuwala</title>
         <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
@@ -49,9 +71,9 @@ export default function Layout({ title, children }: LayoutProps) {
           name="keywords"
           content="usman, usman sabuwala, max programming, max, usman website, usman's website, max programming website, usman sabuwala website, usman portfolio"
         />
-      </Head>
+      </Head> */}
       <Header />
-      <main className="m-10 md:m-16">{children}</main>
+      <main className='m-10 md:m-16'>{children}</main>
       {/* <Footer /> */}
     </div>
   );
