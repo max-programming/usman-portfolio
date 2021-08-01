@@ -15,7 +15,7 @@ export default function Layout({ title, children }: LayoutProps) {
       <SEO
         title={`${title} | Usman Sabuwala`}
         description="I'm Usman, Developer, Student, and Content Creator."
-        icon='/usman.jpg'
+        icon='/logo.png'
         twitter={{
           card: 'summary',
           image: '/usman.jpg',
